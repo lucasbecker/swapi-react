@@ -11,8 +11,3 @@ A API pública utilizada para obter os dados é a [SWAPI](https://swapi.dev/).
 
 ## Install and run
 Após clonar ou realizar o download desse repositório e instalar as dependências execute o comando `npm start`.
-
-## Deploy
-
-## License
-[MIT](./LICENSE) | [Lucas Becker](https://lucasbecker.github.io)
