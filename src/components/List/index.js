@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import Loading from '../Loading';
+import NotFound from '../NotFound';
 
 import {getIdFromUrl} from '../../utils';
 
@@ -20,7 +21,9 @@ export default function List({data, genderFilter: gender}){
     <div className="content">
       <ul className="list">
         
-        {((list.length === 0) && (<Loading />)) }
+        {((list.length === 0 && data !== undefined && data.count > 0 ) && (<Loading />)) }
+
+        {(data !== undefined && data.count === 0 ) && (<NotFound />)}
 
         {list.map((item, index) => {
           const itemId = getIdFromUrl(item.url);
