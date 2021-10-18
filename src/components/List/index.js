@@ -21,7 +21,7 @@ export default function List({data, genderFilter: gender}){
     <div className="content">
       <ul className="list">
         
-        {((list.length === 0 && data !== undefined && data.count > 0 ) && (<Loading />)) }
+        {(list.length === 0 && data === undefined) && (<Loading />)}
 
         {(data !== undefined && data.count === 0 ) && (<NotFound />)}
 
