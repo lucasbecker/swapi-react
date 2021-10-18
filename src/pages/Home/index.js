@@ -42,7 +42,6 @@ function Home(){
       <Sidebar>
         <form 
           onSubmit={handleSubmit} 
-          className="create-orphanage-form"
         >
           
           <div className="input-block">
